@@ -13,15 +13,19 @@ int main() {
 }
 int max_of_four(int a, int b, int c, int d)
 {
+    // if a is more than all => print a
     if(a>b && a>c && a>d){
         return a;
     }
+    // else if b is more than the rest => print b
     else if(b>c && b>d){
         return b;
     }
+    // else if c is more than d => print c
     else if(c>d){
         return c;
     }
+    // else => print d
     else {
         return d;
     }
