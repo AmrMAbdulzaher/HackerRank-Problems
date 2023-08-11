@@ -6,27 +6,29 @@
 //Complete the following function.
 
 int marks_summation(int* marks, int number_of_students, char gender) {
-    
-    int sum=0; //initialize the sum variable
-    if(gender=='b') //if gender is boy
+   
+    int sum=0;
+	//if gender is boy
+    if(gender=='b') 
     {
-        for(int i=0;i<=number_of_students;i+=2) //loop for even numbers only
+		//loop for even numbers only
+        for(int i=0;i<=number_of_students;i+=2) 
         {
             sum=sum+marks[i];
         }
     }
+	
+	//if gender is girl
     else if(gender=='g')
     {
+		//loop for odd numbers only
         for(int i=1;i<=number_of_students;i+=2)
         {
             sum=sum+marks[i];
         }
     } 
     
-    return sum;
-    
-    
-    
+    return sum; 
 }
 
 int main() {

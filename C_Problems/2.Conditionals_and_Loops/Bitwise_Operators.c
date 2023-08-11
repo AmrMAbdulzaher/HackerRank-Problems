@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 //Complete the following function.
 
 
@@ -13,16 +10,16 @@ void calculate_the_maximum(int n, int k) {
   {
       for(int j=i+1;j<=n;j++)
       {
-        int max = i&j;
-         if ((max) > andMax && (max) < k){
+         int max = i&j;
+         if (max > andMax && max < k){
              andMax=max;  }
          
          max = i |j;
-         if ((max) > orMax && (max) < k){
+         if (max > orMax && max < k){
              orMax=max; }
          
          max= i^j;
-         if ((max) > xorMax && (max) < k) {
+         if (max > xorMax && max < k) {
              xorMax=max; }
       }
       
