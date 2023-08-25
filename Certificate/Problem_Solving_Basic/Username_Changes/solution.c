@@ -33,7 +33,7 @@ char** possibleChanges(int usernames_count, char** usernames, int* result_count)
 
     for (int i = 0; i < usernames_count; i++)
 	{
-		//check if username length  or less => this username is unchangeable
+		//check if username length 1 or less => this username is unchangeable
         if (strlen(usernames[i]) <= 1)
 		{
             result[i] = "NO";

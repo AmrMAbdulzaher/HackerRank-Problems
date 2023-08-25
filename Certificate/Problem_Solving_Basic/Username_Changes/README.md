@@ -1,6 +1,6 @@
-# HackerRank Challenge: Usernames Changes
+# HackerRank Problem: Usernames Changes
 
-This repository contains a C solution for the HackerRank challenge "[Usernames-Changes] Challenge PS (Basic)" in the Problem Solving (Basic) track.
+This repository contains a C/Python solution for the HackerRank problem "[Usernames-Changes] Challenge PS (Basic)" in the Problem Solving (Basic) track.
 
 ## Problem Description
 

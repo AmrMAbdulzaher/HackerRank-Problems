@@ -26,22 +26,19 @@ def findSubstring(s, k):
     #loop through all possible substrings of length k
     for endIndex in range(k,len(s)+1):
         currentString= s[startIndex:endIndex]
-
         #count number of vowels in current substring
         for letter in range(len(currentString)):
            currentCount += currentString[letter] in vowelLetters
-        
         #update maxCount and maxString if a higher count is found
         if(currentCount>maxCount):
             maxCount = currentCount
             maxString= currentString
-        
         #reset currentCount for next substring
         currentCount=0
         #move to the next substring
         startIndex+=1
         
-    return maxString if maxCount !=0 else "Not found!"
+    return maxString if maxCount > 0 else "Not found!"
 
 
 if __name__ == '__main__':
